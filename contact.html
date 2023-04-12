@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="menuCSSForAll.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+
+<body>
+    <header class="header-area">
+        <div class="header-container">
+            <div class="site-logo">
+                <a href="#">Royel <span>Showroom</span></a>
+            </div>
+            <div class="mobile-nav">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="/">home</a></li>
+                    <li><a href="/imageGallery.html">gallery</a></li>
+                    <li><a href="/shopping.html">Shoping</a></li>
+                    <li><a href="/Exclusive_Collection_construction2.html">Exclusive Collection</a></li>
+                    <li><a href="/contact.html"  class="active">contact</a></li>
+                    <li><a href="/Developer.html">about</a></li>
+                    <!-- <li><a href="singUp.html"><i class="fa fa-sign-in"></i></a></li>
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Jquary CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".mobile-nav i").click(function () {
+                $(".site-nav-menu").toggleClass("mobile-menu");
+            });
+        })
+    </script>
+    <!-- MAIN BODY -->
+    <div class="container">
+        <h2><span id="thanks"></span></h2>
+        
+        <form name="submit-to-google-sheet">
+            <h2 class="title">get In Touch</h2>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="Name" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+            <span id="err-name"></span>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" placeholder="Enter your email address" id="contact-email"
+                onkeyup="validateEmail()">
+            <span id="err-email"></span>
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" name="phone" placeholder="Enter your phone number" id="contact-phone"
+                onkeyup="validatePhone()">
+            <span id="err-number"></span>
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <input type="text" name="subject" placeholder="enter subject" id="contact-subject"
+                onkeyup="validateSubject()">
+            <span id="err-sub"></span>
+            <i class="fa fa-commenting" aria-hidden="true"></i>
+            <textarea placeholder="Enter your message" name="message" rows="6" id="contact-message"
+                onkeyup="validateMessage()"></textarea>
+            <span id="err-msg"></span>
+
+
+            <button type="submit" class="btn-primary"> Send Your Message <i
+                    class="fa-solid fa-paper-plane"></i></button>
+            <span id="err-submit"></span>
+        </form>
+
+    </div>
+
+    <div class="second-container">
+        <h2>You Can Find Us </h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.9437846010333!2d88.32160901432445!3d22.506292241074565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0270ae7bf1d287%3A0xeb482b7ea9c66a7d!2sEmcons%20Business%20Academy!5e0!3m2!1sen!2sin!4v1657434560047!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="row-3">
+            <div class="col-3">
+                <a href="#" class="head">Royel <span>Showroom</span></a>
+                <span class="content"><h4>This Project Is created By</h4>
+                    <ul>
+                        <li> <a href="#">Planning and design<br> Rajkumar Khatua <br> Kousik Samanta <br> Rajkumar Roy</a></li>
+                        <li> <a href="#">Developed By Mr.Rajkumar Khatua</a></li>
+                        <!-- <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li> -->
+                    </ul>
+                </span>
+            </div>
+            <div class="col-3">
+                <h3>useful links</h3>
+                <ul class="foot-inks">
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/imageGallery.html">gallery</a></li>
+                    <li><a href="/shopping.html">Shoping</a></li>
+                    <li><a href="/Exclusive_Collection.html">Exclusive Collection</a></li>
+                    <li><a href="/contact.html">contact</a></li>
+                    <li><a href="/Developer.html">about-us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3 class="message">feedback</h3>
+                <input type="text" class="register" placeholder="new register">
+                <i class="fa fa-paper-plane"></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwOCdWBAe2jWgTQdISCHH2y7jVGMCHe-nKWDraAW9-odqOtojrDJzOsjLxl1P8XQsXwbw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('thanks')
+        // const icon =document.getElementsByClassName('fa-check-circle')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Thanks Your Message Was Received!"
+
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                })
+
+            form.reset()
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="validation.js"></script>
+</body>
+
+</html>

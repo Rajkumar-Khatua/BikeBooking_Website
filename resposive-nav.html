@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <style>
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:sans-serif;
+}
+nav{
+    background-color:#222;
+    padding: 5px 20px;
+}
+ul{
+    list-style-type:none;
+}
+a{
+    color: #fff;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.menu li{
+    font-size:16px;
+    padding:15px 5px;
+}
+.menu li a{
+    display: block;
+}
+
+.logo a{
+font-size:20px;
+}
+.button.secondary{
+    border-bottom:1px #444 solid;
+}
+
+/* mobile menu */
+.menu{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toogle{
+    cursor: pointer;
+    order: 1;
+}
+.item.button{
+    order: 2;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.item.active{
+    display: block;
+}
+.hidden{
+    background-color:#999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+.hidden::before,.hidden::after{
+    background-color:#999;
+    display: inline-block;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.hidden::before{
+    top: 5px;
+}
+.hidden::after{
+    top: -5px;
+}
+/* TABLET MENU */
+@media all and (min-width:468px){
+    .menu{
+        justify-content:center;
+    }
+    .logo{
+        flex: 1
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toogle{
+        order: 2;
+    }
+    .button.secondary{
+        border: 0;
+    }
+    .button a{
+        text-decoration: none;
+        padding: 7px 15px;
+        background: teal;
+        border: 1px solid #006d6d;
+        border-radius: 50em;
+    }
+    .button.secondary a{
+        background: transparent;
+    }
+    .button a:hover{
+        transition: all .25s;
+    }
+    .button:not(.secondary) a:hover{
+        background: #006d6d;
+        border-color: #006d6d;
+    }
+    .button.button.secondary a:hover{
+        color:#ddd;
+    }
+}
+/* desktop menu */
+@media all and (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toogle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding:15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+}
+    </style>
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="menu.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // Shorthand for $( document ).ready()
+      $(function () {
+        $(".toogle").on("click", function(){
+            if($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            }
+            else {
+                $(".item").addClass("active");
+            }
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo"><a href="#">WELLCOME</a></li>
+        <li class="item"><a href="#">HOME</a></li>
+        <li class="item"><a href="#">ABOUT</a></li>
+        <li class="item"><a href="#">SERVICE</a></li>
+        <li class="item button"><a href="#">LOGIN</a></li>
+        <li class="item button secondary"><a href="#">sing up</a></li>
+        <li class="toogle"><span class="hidden"></span></li>
+      </ul>
+    </nav>
+    <main>
+      <a href="#" style="position: fixed; bottom: 0">www.google.com</a>
+    </main>
+  </body>
+</html>

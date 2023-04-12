@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .primary-menu a:hover,
+        .primary-menu .active {
+            color: #ff4a44;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="menuCSSForAll.css">
+    <link rel="stylesheet" href="imageS.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="header-container">
+            <div class="site-logo">
+                <a href="#">Web <span>Designer</span></a>
+            </div>
+            <div class="mobile-nav">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="/">home</a></li>
+                    <li><a href="/imageGallery.html" class="active">gallery</a></li>
+                    <li><a href="/shopping.html">Shoping</a></li>
+                    <li><a href="/Exclusive_Collection_construction2.html">Exclusive Collection</a></li>
+                    <li><a href="/">contact</a></li>
+                    <li><a href="Developer.html">about</a></li>
+                    <!-- <li><a href="#"><i class="fa fa-sign-in"></i></a></li>
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Jquary CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".mobile-nav i").click(function () {
+                $(".site-nav-menu").toggleClass("mobile-menu");
+            });
+        })
+    </script>
+
+    
+    <div class="container">
+
+        <div class="gallery">
+
+            <a href="https://images.unsplash.com/photo-1506424482693-1f123321fa53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=803&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1506424482693-1f123321fa53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=803&q=80"
+                    alt="">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1525160354320-d8e92641c563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1525160354320-d8e92641c563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1508357941501-0924cf312bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1508357941501-0924cf312bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1580&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1580&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1606907568152-58fcb0a0a4e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1606907568152-58fcb0a0a4e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1502744688674-c619d1586c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1502744688674-c619d1586c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1614165936126-2ed18e471b3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1614165936126-2ed18e471b3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1515777315835-281b94c9589f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1568772585432-0bcd9add44f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1568772585432-0bcd9add44f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1571646078462-3a00bdd5eb73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1571646078462-3a00bdd5eb73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1559289431-9f12ee08f8b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1559289431-9f12ee08f8b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1580310614729-ccd69652491d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1589560552200-67fbddd531f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1589560552200-67fbddd531f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1635094742897-3f0014ccc07b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1635094742897-3f0014ccc07b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1588627541420-fce3f661b779?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1588627541420-fce3f661b779?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1596687760372-4c0d266059a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1596687760372-4c0d266059a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1580341289255-5b47c98a59dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1580341289255-5b47c98a59dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1596440114792-d3e0ae1763f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1596440114792-d3e0ae1763f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1572746965401-cb4df8f9fa79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=603&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1572746965401-cb4df8f9fa79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=603&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1591791423917-04af7edc8b0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1591791423917-04af7edc8b0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="">
+            </a>
+            <a href="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                data-lightbox="models" data-title="Mwashaki Ninja 699 ">
+
+                <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </a>
+        </div>
+
+        
+    </div>
+    <footer>
+        <div class="row-3">
+            <div class="col-3">
+                <a href="#" class="head">Royel <span>Showroom</span></a>
+                <span class="content"><h4>This Project Is created By</h4>
+                    <ul>
+                        <li> <a href="#">Planning and design<br> Rajkumar Khatua <br> Kousik Samanta <br> Rajkumar Roy</a></li>
+                        <li> <a href="#">Developed By Mr.Rajkumar Khatua</a></li>
+                        <!-- <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li> -->
+                    </ul>
+                </span>
+            </div>
+            <div class="col-3">
+                <h3>useful links</h3>
+                <ul class="foot-inks">
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/imageGallery.html">gallery</a></li>
+                    <li><a href="/shopping.html">Shoping</a></li>
+                    <li><a href="/Exclusive_Collection.html">Exclusive Collection</a></li>
+                    <li><a href="/contact.html">contact</a></li>
+                    <li><a href="/Developer.html">about-us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3 class="message">feedback</h3>
+                <input type="text" class="register" placeholder="new register">
+                <i class="fa fa-paper-plane"></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+
+</html>

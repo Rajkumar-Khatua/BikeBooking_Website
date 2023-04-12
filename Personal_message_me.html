@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Raj's Personal Message</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Wellcome </h2>
+        <h3 class="title">Hello I'am <span>Raj<br> </span>Frontend and backend <span> </span> <br> <span> Developer</span>
+        </h3>
+        <h2><span id="thanks"></span></h2>
+        <!-- <form>
+            <input type="text" placeholder="Enter Your Name" name="name" required>
+            <input type="email" placeholder="Enter your email address" name="email" required>
+            <input type="number" placeholder="Your Mobile Number" name="number" required>
+            <input type="text" placeholder="Enter Subject" name="subject">
+            <textarea name="message" rows="8" placeholder="Please tell Me How Can I help you...?"></textarea>
+        </form> -->
+        <form name="submit-to-google-sheet">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="Name" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+            <span id="err-name" class="hidden"></span>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" placeholder="Enter your email address" id="contact-email"
+                onkeyup="validateEmail()">
+            <span id="err-email" class="hidden"></span>
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" name="phone" placeholder="Enter your phone number" id="contact-phone"
+                onkeyup="validatePhone()">
+            <span id="err-number" class="hidden"></span>
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <input type="text" name="subject" placeholder="enter subject" id="contact-subject"
+                onkeyup="validateSubject()">
+            <span id="err-sub" class="hidden"></span>
+            <i class="fa fa-commenting" aria-hidden="true"></i>
+            <textarea placeholder="Enter your message" name="message" rows="6" id="contact-message"
+                onkeyup="validateMessage()"></textarea>
+            <span id="err-msg" class="hidden"></span>
+
+
+            <button type="submit" class="btn-primary"> Send Your Message <i
+                    class="fa-solid fa-paper-plane"></i></button>
+            <span id="err-submit" class="hidden"></span>
+        </form>
+    </div>
+    </div>
+
+
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5QZzWoFJfFjL46T0_NU9B_UGae73K1B0MMwGVvWQzbHTD6nhN2ypQxQ8ea3uvKCTW/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('thanks')
+        // const icon =document.getElementsByClassName('fa-check-circle')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Thanks Your Message Was Received!"
+
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                })
+
+            form.reset()
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5QZzWoFJfFjL46T0_NU9B_UGae73K1B0MMwGVvWQzbHTD6nhN2ypQxQ8ea3uvKCTW/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('thanks')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thanks For Contact Me I will Reply You very Shortly!"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="validation.js"></script>
+</body>
+
+</html>

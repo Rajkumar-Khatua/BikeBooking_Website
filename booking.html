@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="menuCSSForAll.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Book Your Bike</title>
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="header-container">
+            <div class="site-logo">
+                <a href="#">Web <span>Designer</span></a>
+            </div>
+            <div class="mobile-nav">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="/">home</a></li>
+                    <li><a href="/imageGallery.html">gallery</a></li>
+                    <li><a href="/shopping.html">Shoping</a></li>
+                    <li><a href="/Exclusive_Collection.html">Exclusive Collection</a></li>
+                    <li><a href="/contact.html">contact</a></li>
+                    <li><a href="Developer.html" class="active">about</a></li>
+                    <!-- <li><a href="#"><i class="fa fa-sign-in"></i></a></li> -->
+                    <li><a href="booking.html"><i class="fa fa-heart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <form name="submit-to-google-sheet">
+            <h2 class="title">book Your Bike</h2>
+            <label for="name">Name: </label>
+            <input type="text" name="Name" placeholder="Enter your name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <label for="phone">Phone: </label>
+            <input type="number" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="pickup">Pickup Location: </label>
+            <input type="text" name="pickupL" placeholder="enter Pickup Location" required>
+
+            <label for="place">Pickup Date: </label>
+            <input type="date" name="pickupD" placeholder="enter Pickup Date" required>
+
+            <label for="time">Pickup Time: </label>
+            <input type="time" name="pickupT" placeholder="enter Pickup Location" required>
+
+            <button type="submit" class="btn-primary">Book Now</button>
+        </form>
+    </div>
+    <footer>
+        <div class="row-3">
+            <div class="col-3">
+                <a href="#" class="head">Royel <span>Showroom</span></a>
+                <span class="content">
+                    <h4>This Project Is created By</h4>
+                    <ul>
+                        <li> <a href="#">Planning and design<br> Rajkumar Khatua <br> Kousik Samanta <br> Rajkumar
+                                Roy</a></li>
+                        <li> <a href="#">Developed By Mr.Rajkumar Khatua</a></li>
+                        <!-- <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li> -->
+                    </ul>
+                </span>
+            </div>
+            <div class="col-3">
+                <h3>usefull links</h3>
+                <ul class="foot-inks">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">gallery</a></li>
+                    <li><a href="#">Shoping</a></li>
+                    <li><a href="#">Exclusive Collection</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">about-us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3 class="message">feedback</h3>
+                <input type="text" class="register" placeholder="new register">
+                <i class="fa fa-paper-plane"></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Jquary CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".mobile-nav i").click(function () {
+                $(".site-nav-menu").toggleClass("mobile-menu");
+            });
+        })
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwJ-3KBM12_2xAZAIBwPIuEp-SMFiBwFG9B-WGrt-zKCSgCQ0LJqquEMR9eddHdWD3K/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            form.reset()
+            alert('Congragulation yout Bike Booking Was Successfully! we will notify very shortly');
+        })
+    </script>
+</body>
+
+</html>

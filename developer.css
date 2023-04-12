@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Courier New", sans-serif; */
+  box-sizing: border-box;
+}
+body {
+    background-image: url("https://images.unsplash.com/photo-1618172193763-c511deb635ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"); */
+  /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+  /* background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#title{
+    text-align: center;
+    font-size:45px;
+    font-weight: 600;
+    color:#ff01cf;
+    flex-direction: column;
+    /* margin: 10px 15px; */
+    /* border: 1px solid rgba(255,255,255,0.3); */
+    /* border-radius: 5px; */
+    padding: 10px 20px;
+    /* background-image: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80); */
+    background-size: cover;
+    background-repeat:no-repeat;
+}   
+@media (max-width: 760px) {
+    .container{
+        background-image: ('https://images.unsplash.com/photo-1604077350837-c7f82f28653f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .row h2{
+        font-size: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #title {
+        /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+  
+    
+}
+@media screen and (max-width: 480px){
+    .row img{
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+        border-radius: 50%;
+    }
+}
+.row{
+    width: 90%;
+    max-width: 350px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 35px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow:0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    margin: 10px;
+}
+.row img{
+    width: 110px;
+    height: 110px;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 50%;
+}
+.row h2{
+    font-size: 35px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.row p{
+    padding: 13px 0px;
+    text-align: center;
+}
+.row h3{
+    padding: 12px auto;
+    max-width: 335px;
+    text-align: center;
+    margin: 3px;
+}
+.row h3 span{
+    color: rgb(255 2 78);
+}
+.icons{
+    padding: 10px 10px;
+}
+ .fa-brands, .fa-solid{
+    padding :0 10px;
+    font-size: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.fa-brands:hover{
+    /* color: rgb(226, 67, 141); */
+    color: #ff01cf	;
+    transform: translateY(-5px);
+}
+.fa-solid:hover{
+    color: #ff01cf	;
+    transform: translateY(-5px);
+}
+.meaasge{
+    /* border: 1px solid rgba(255,255,255,0.3); */
+    /* padding: 10px 30px; */
+    border-radius:10px;
+    margin:30px 0 10px; 
+    transition: all 0.5s;
+}
+.meaasge:hover{
+    transform: translateY(-5px);
+    background:transparent;
+}
+.meaasge a{
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 10px 30px;
+    text-align: center;
+    color: #ff01cf;
+    background-color:#fff;
+    font-size:18px;
+    font-weight: 550;
+    text-decoration: none;
+    
+    border-radius:30px;
+}
+.meaasge .fa-paper-plane{
+    font-size: 20px;
+    color: aqua;
+}

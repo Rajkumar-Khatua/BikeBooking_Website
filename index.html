@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        #developer {
+            font-size: 16px;
+            color: tomato;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 5px;
+            font-weight: 500;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- ALL THE LINKS ARE HERE -->
+    <link rel="stylesheet" href="StyleIndex.css">
+    <link rel="stylesheet" href="new_indexCSS.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="menuCSSForAll.css">
+    <style>
+        .send {
+
+            background: transparent;
+            border: none;
+        }
+
+        .fa-paper-plane {
+            padding: 15px;
+            font-size: 20px;
+            transition: 0.5s ease;
+
+        }
+
+        .fa-paper-plane:hover {
+            transform: translateX(15px);
+        }
+    </style>
+
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="header-container">
+            <div class="site-logo">
+                <a href="#">Royel <span>Showroom</span></a>
+            </div>
+            <div class="mobile-nav">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="/" class="active">home</a></li>
+                    <li><a href="/imageGallery.html">gallery</a></li>
+                    <li><a href="/shopping.html">Shoping</a></li>
+                    <li><a href="/Exclusive_Collection_construction2.html">Exclusive Collection</a></li>
+                    <li><a href="/contact.html">contact</a></li>
+                    <li><a href="/Developer.html">about</a></li>
+                    <!-- <li><a href="singUp.html"><i class="fa fa-sign-in"></i></a></li>
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Jquary CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".mobile-nav i").click(function () {
+                $(".site-nav-menu").toggleClass("mobile-menu");
+            });
+        })
+    </script>
+
+
+    <div class="row">
+
+        <!-- <video video.mp4 autoplay="true">
+            <source src="images/video.mp4" type="video/mp4">
+        </video> -->
+        <div class="col-2">
+            <!-- <h1>নমস্কার <span>মোকসা অভিনন্দন</span> </h1> -->
+            <h1>WELLCOME TO OUR <br><span>ROYEL SHOWROOM!</span></h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,<br />
+                et veniam blanditiis rerum asperiores fuga explicabo eveniet
+                pariatur repellat eum.
+            </p>
+            <a href="shopping.html" class="btn">Explore Now &#x27F6;</a>
+        </div>
+        <div class="col-2">
+            <!-- <img src="https://www.transparentpng.com/download/motorcycle/s7u7lM-motorcycl-black-honda-e-hd-image.png" /> -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img
+                            src="https://www.transparentpng.com/thumb/motorcycle/HZgl8M-blue-race-motorcycle-background.png"
+                            alt="blue race motorcycle background @transparentpng.com">
+                        <div class="book">
+                            <h3>HayaBhusa 966cc</h3>
+                            <br>
+                            <a href="#">Test Drive &#x27F6;</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.transparentpng.com/thumb/motorcycle/s7u7lM-motorcycl-black-honda-e-hd-image.png"
+                            alt="motorcycl black honda e hd Image @transparentpng.com">
+                        <div class="book">
+                            <h3>HayaBhusa 966cc</h3>
+                            <br>
+                            <a href="#">Test Drive &#x27F6;</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.transparentpng.com/thumb/motorcycle/PVjN8y-ducati-motorcycle-sports-picture.png"
+                            alt="ducati motorcycle sports picture @transparentpng.com">
+                        <div class="book">
+                            <h3>HayaBhusa 966cc</h3>
+                            <br>
+                            <a href="#">Test Drive &#x27F6;</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://freepngimg.com/thumb/motorcycle/36595-5-ducati-transparent-background.png"
+                            alt="this is an bike image">
+                        <div class="book">
+                            <h3>HayaBhusa 966cc</h3>
+                            <br>
+                            <a href="#">Text Drive&#x27F6;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row-3">
+            <div class="col-3">
+                <a href="#" class="head">Royel <span>Showroom</span></a>
+                <div class="content">
+                    <h4>This Project Is created By</h4>
+                    <ul>
+                        <li> <a href="#">Planning and design<br> Rajkumar Khatua <br> Kousik Samanta <br> Rajkumar
+                                Roy</a></li>
+                        <li> <a href="#" id="developer">Developed By Mr.Rajkumar Khatua</a></li>
+                        <!-- <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3>useful links</h3>
+                <ul class="foot-inks">
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/imageGallery.html">gallery</a></li>
+                    <li><a href="/shopping.html">Shoping</a></li>
+                    <li><a href="/Exclusive_Collection.html">Exclusive Collection</a></li>
+                    <li><a href="/contact.html">contact</a></li>
+                    <li><a href="/Developer.html">about-us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3 class="message">feedback</h3>
+                <input type="text" class="register" placeholder="new register">
+                <i class="fa fa-paper-plane"></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                TransitionEvent: 3000,
+                disableOnInteraction: false,
+
+            },
+            // Optional parameters
+            //   direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            //   // And if we need scrollbar
+            //   scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //   },
+        });
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwxmnEWaAzM8tpZRtjPqyn-RhpF9ZkZGjG555e7klvuWW2j1EyEqrLpJBs6m3k264cg/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
