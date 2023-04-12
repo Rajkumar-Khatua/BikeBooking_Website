@@ -118,6 +118,7 @@ body {
     font-size: 25px;
     transition: all 0.5s;
     cursor: pointer;
+    color: #fff;
 
 }
 .fa-brands:hover{
